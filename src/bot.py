@@ -21,7 +21,6 @@ ONLINE_USERS = {}
 
 @TELEGRAM_BOT.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    print(message)
     TELEGRAM_BOT.reply_to(message, "Hello :)")
 
 
@@ -40,7 +39,7 @@ def on_ts_event(sender, **kw):
             msg = ONLINE_USERS.pop(str(event.client_id)) + \
                 " si è disconnesso da teamspeak"
         except KeyError:
-            msg = "Sconosciuto è uscito da teamspeak"
+            msg = "Sconosciuto si è disconnesso da teamspeak"
         send_tg_message(msg)
 
 
@@ -57,6 +56,7 @@ def main():
     print("Starting bot...")
     ts3BotConnect()
     TELEGRAM_BOT.infinity_polling()
+    send_tg_message("I'm alive!")
 
 
 if __name__ == '__main__':

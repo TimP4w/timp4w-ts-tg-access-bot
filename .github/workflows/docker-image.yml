@@ -15,6 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/tg-ts-bot:latest
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/tg-ts-bot:latest
+    - name: Login to DockerHub
+      uses: docker/login-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USER }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Push to Docker registry
-      run: docker push ${{secrets.DOCKER_USER}}/tg-ts-bot
+      run: docker push ${{ secrets.DOCKER_USER }}/tg-ts-bot

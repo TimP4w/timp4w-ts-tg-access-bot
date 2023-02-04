@@ -5,10 +5,10 @@ import os
 
 # TeamSpeak
 HOST = os.environ.get("TS_HOST")
-PORT = os.environ.get("TS_PORT")  # 10011
-USER = os.environ.get("TS_USER")  # 'serveradmin'
+PORT = os.environ.get("TS_PORT")
+USER = os.environ.get("TS_USER")
 PASS = os.environ.get("TS_PWD")
-DEFAULTCHANNEL = os.environ.get("TS_CHANNEL")  # 'Default'
+DEFAULTCHANNEL = os.environ.get("TS_CHANNEL")
 SID = 1
 
 # Telegram

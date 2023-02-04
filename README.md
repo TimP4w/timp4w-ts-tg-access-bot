@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/TimP4w/timp4w-ts-tg-access-bot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/TimP4w/timp4w-ts-tg-access-bot/actions/workflows/docker-image.yml)
+
 # TeamSpeak Telegram Access Bot
 
 A simple bot that notifies in a Telegram chat whenever someone enters a TeamSpeak server.

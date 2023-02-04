@@ -45,3 +45,6 @@ TS_USER=
 TS_PORT=
 TS_CHANNEL=
 ```
+
+# License (MIT)
+[LICENSE](LICENSE.md)

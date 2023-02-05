@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 pytelegrambotapi = "*"
 ts3api = "*"
+python-i18n = {extras = ["yaml"], version = "*"}
 
 [dev-packages]
 

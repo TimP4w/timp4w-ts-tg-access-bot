@@ -29,4 +29,4 @@ USER tgtsbot
 
 COPY . .
 
-ENTRYPOINT ["python3", "./src/bot.py"]
+ENTRYPOINT ["python3", "-u", "./src/bot.py"]

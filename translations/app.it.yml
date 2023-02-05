@@ -1,0 +1,6 @@
+it:
+  greeting: Ciao :)
+  unknown: Sconosciuto
+  connected: "%{name} si è connesso a TeamSpeak"
+  disconnected: "%{name} si è disconnesso da TeamSpeak"
+  online_users: Utenti Online (%{total})

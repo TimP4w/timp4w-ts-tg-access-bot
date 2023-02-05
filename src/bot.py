@@ -4,7 +4,7 @@ import telebot
 import os
 import i18n
 
-
+# TODO: use env variable to set locale
 i18n.load_path.append('translations')
 i18n.set('locale', 'it')
 i18n.set('fallback', 'en')

@@ -2,7 +2,9 @@
 
 # TeamSpeak Telegram Access Bot
 
-A simple bot that notifies in a Telegram chat whenever someone enters a TeamSpeak server.
+A simple bot that notifies in a Telegram chat whenever someone enters a TeamSpeak server and can display currently online users via the `/online` command.
+
+This is just a fun project I wanted to try to refresh a bit of python and to use in my TS server with some friends, however if you like it and would like to see new feature, please let me know and I'll see what can I do :)
 
 # Dev setup
 
@@ -49,4 +51,5 @@ TS_CHANNEL=
 ```
 
 # License (MIT)
+
 [LICENSE](LICENSE.md)
